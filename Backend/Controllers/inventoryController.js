@@ -1,4 +1,4 @@
-const BloodInventory = require("../Models/BloodInventory");
+const BloodInventory = require("../models/BloodInventory");
 
 // Add or Update Inventory
 exports.updateInventory = async (req, res) => {

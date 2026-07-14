@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
-const auth = require("../Middleware/authMiddleware");
-const admin = require("../Middleware/adminMiddleware");
+const auth = require("../middleware/authMiddleware");
+const admin = require("../middleware/adminMiddleware");
 
 const {
   dashboard,
@@ -34,7 +34,7 @@ const {
   getBloodTypeReport,
   getRegionalReport,
   seedAnalyticsData,
-} = require("../Controllers/adminController");
+} = require("../controllers/adminController");
 
 router.get("/dashboard", auth, admin, dashboard);
 

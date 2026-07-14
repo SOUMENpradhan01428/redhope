@@ -1,5 +1,5 @@
-const User = require("../Models/User");
-const Notification = require("../Models/Notification");
+const User = require("../models/User");
+const Notification = require("../models/Notification");
 
 const awardPoints = async (userId, pointsEarned) => {
   try {

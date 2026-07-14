@@ -1,4 +1,4 @@
-const BloodRequest = require("../Models/BloodRequest");
+const BloodRequest = require("../models/BloodRequest");
 const { awardPoints } = require("../utils/gamification");
 
 // Hospital creates request

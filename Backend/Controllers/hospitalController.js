@@ -1,8 +1,8 @@
-const User = require("../Models/User");
-const BloodRequest = require("../Models/BloodRequest");
-const BloodStock = require("../Models/BloodStock");
+const User = require("../models/User");
+const BloodRequest = require("../models/BloodRequest");
+const BloodStock = require("../models/BloodStock");
 const { awardPoints } = require("../utils/gamification");
-const { createNotification, notifyMany } = require("../Controllers/notificationController");
+const { createNotification, notifyMany } = require("./notificationController");
 
 // Helper for distance calculation
 function haversineDistance(lat1, lon1, lat2, lon2) {

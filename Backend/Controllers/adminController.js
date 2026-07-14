@@ -1,12 +1,12 @@
-const User = require("../Models/User");
-const BloodRequest = require("../Models/BloodRequest");
-const Camp = require("../Models/Camp");
-const CampRegistration = require("../Models/CampRegistration");
-const BloodStock = require("../Models/BloodStock");
-const Notification = require("../Models/Notification");
+const User = require("../models/User");
+const BloodRequest = require("../models/BloodRequest");
+const Camp = require("../models/Camp");
+const CampRegistration = require("../models/CampRegistration");
+const BloodStock = require("../models/BloodStock");
+const Notification = require("../models/Notification");
 const { createNotification } = require("./notificationController");
 const { awardPoints } = require("../utils/gamification");
-const Reward = require("../Models/Reward");
+const Reward = require("../models/Reward");
 
 // Dashboard Statistics
 exports.dashboard = async (req, res) => {
