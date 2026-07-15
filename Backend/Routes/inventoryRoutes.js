@@ -1,15 +1,15 @@
 const express = require("express");
 const router = express.Router();
 
-const auth = require("../Middleware/authMiddleware");
-const role = require("../Middleware/roleMiddleware");
-const admin = require("../Middleware/adminMiddleware");
+const auth = require("../middleware/authMiddleware");
+const role = require("../middleware/roleMiddleware");
+const admin = require("../middleware/adminMiddleware");
 
 const {
   updateInventory,
   getInventory,
   getAllInventory,
-} = require("../Controllers/inventoryController");
+} = require("../controllers/inventoryController");
 
 // Hospital updates inventory
 router.post("/", auth, role("Hospital"), updateInventory);

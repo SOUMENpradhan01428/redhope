@@ -1,7 +1,7 @@
 require("dotenv").config({ path: "./.env" });
 const mongoose = require("mongoose");
-const BloodRequest = require("./Models/BloodRequest");
-const User = require("./Models/User");
+const BloodRequest = require("./models/BloodRequest");
+const User = require("./models/User");
 
 mongoose.connect(process.env.MONGODB_URI)
   .then(async () => {

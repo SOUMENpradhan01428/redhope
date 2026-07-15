@@ -1,7 +1,7 @@
-const User = require("../Models/User");
-const BloodRequest = require("../Models/BloodRequest");
-const Camp = require("../Models/Camp");
-const CampRegistration = require("../Models/CampRegistration");
+const User = require("../models/User");
+const BloodRequest = require("../models/BloodRequest");
+const Camp = require("../models/Camp");
+const CampRegistration = require("../models/CampRegistration");
 const { createNotification } = require("./notificationController");
 
 // Donor Profile
@@ -496,7 +496,7 @@ exports.submitCompletion = async (req, res) => {
   }
 };
 
-const Reward = require("../Models/Reward");
+const Reward = require("../models/Reward");
 
 exports.getRewards = async (req, res) => {
   try {

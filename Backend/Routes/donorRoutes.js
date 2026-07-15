@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
-const auth = require("../Middleware/authMiddleware");
-const role = require("../Middleware/roleMiddleware");
+const auth = require("../middleware/authMiddleware");
+const role = require("../middleware/roleMiddleware");
 
 const {
   getProfile,
@@ -20,7 +20,7 @@ const {
   redeemReward,
   getLeaderboard,
   respondToRequest
-} = require("../Controllers/donorController");
+} = require("../controllers/donorController");
 
 // Get donor profile
 router.get("/profile", auth, role("Donor"), getProfile);
