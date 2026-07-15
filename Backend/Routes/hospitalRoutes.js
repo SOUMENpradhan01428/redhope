@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
-const auth = require("../middleware/authMiddleware");
-const role = require("../middleware/roleMiddleware");
+const auth = require("../Middleware/authMiddleware");
+const role = require("../Middleware/roleMiddleware");
 
 const {
   getProfile,
@@ -17,7 +17,7 @@ const {
   getBloodTypeDistribution,
   getBloodStock,
   updateBloodStock
-} = require("../controllers/hospitalController");
+} = require("../Controllers/hospitalController");
 
 // Get hospital profile
 router.get("/profile", auth, role("Hospital"), getProfile);

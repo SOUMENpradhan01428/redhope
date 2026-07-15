@@ -1,15 +1,15 @@
 const express = require("express");
 const router = express.Router();
 
-const auth = require("../middleware/authMiddleware");
-const role = require("../middleware/roleMiddleware");
+const auth = require("../Middleware/authMiddleware");
+const role = require("../Middleware/roleMiddleware");
 
 const {
   createRequest,
   getRequests,
   acceptRequest,
   completeRequest,
-} = require("../controllers/requestController");
+} = require("../Controllers/requestController");
 
 // Hospital creates request
 router.post("/", auth, role("Hospital"), createRequest);

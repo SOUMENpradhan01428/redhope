@@ -1,6 +1,6 @@
-const User = require("../models/User");
-const BloodRequest = require("../models/BloodRequest");
-const BloodStock = require("../models/BloodStock");
+const User = require("../Models/User");
+const BloodRequest = require("../Models/BloodRequest");
+const BloodStock = require("../Models/BloodStock");
 const { awardPoints } = require("../utils/gamification");
 const { createNotification, notifyMany } = require("./notificationController");
 

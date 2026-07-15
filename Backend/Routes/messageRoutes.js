@@ -1,13 +1,13 @@
 const express = require("express");
 const router = express.Router();
-const auth = require("../middleware/authMiddleware");
+const auth = require("../Middleware/authMiddleware");
 const {
   getConversations,
   getMessages,
   sendMessage,
   getUnreadCount,
   startConversation,
-} = require("../controllers/messageController");
+} = require("../Controllers/messageController");
 
 router.get("/conversations", auth, getConversations);
 router.get("/conversations/:conversationId", auth, getMessages);

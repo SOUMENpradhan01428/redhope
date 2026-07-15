@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const path = require("path");
-const BloodRequest = require("../models/BloodRequest");
+const BloodRequest = require("../Models/BloodRequest");
 
 dotenv.config({ path: path.join(__dirname, "../.env") });
 
