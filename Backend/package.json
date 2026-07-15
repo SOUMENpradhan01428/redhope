@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "build": "echo 'No build required for backend'",
     "start": "node index.js",
     "dev": "nodemon index.js",
     "seed": "node utils/seedRewards.js"
